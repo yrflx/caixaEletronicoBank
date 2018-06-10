@@ -35,10 +35,12 @@ public class liberarAcesso extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextCodigoRandom2 = new javax.swing.JTextField();
+        jTextCodigoRandom = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        setSize(new java.awt.Dimension(400, 300));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -51,10 +53,10 @@ public class liberarAcesso extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("CÓDIGO DE ACESSO");
 
-        jTextCodigoRandom2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jTextCodigoRandom2.addActionListener(new java.awt.event.ActionListener() {
+        jTextCodigoRandom.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jTextCodigoRandom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextCodigoRandom2ActionPerformed(evt);
+                jTextCodigoRandomActionPerformed(evt);
             }
         });
 
@@ -83,7 +85,7 @@ public class liberarAcesso extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(jLabel3))
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextCodigoRandom2, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextCodigoRandom, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -96,7 +98,7 @@ public class liberarAcesso extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
-                .addComponent(jTextCodigoRandom2, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTextCodigoRandom, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(24, Short.MAX_VALUE))
@@ -105,9 +107,9 @@ public class liberarAcesso extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextCodigoRandom2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextCodigoRandom2ActionPerformed
+    private void jTextCodigoRandomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextCodigoRandomActionPerformed
 
-    }//GEN-LAST:event_jTextCodigoRandom2ActionPerformed
+    }//GEN-LAST:event_jTextCodigoRandomActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String codigo = jTextCodigoRandom.getText();
@@ -188,7 +190,5 @@ public class liberarAcesso extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextCodigoRandom;
-    private javax.swing.JTextField jTextCodigoRandom1;
-    private javax.swing.JTextField jTextCodigoRandom2;
     // End of variables declaration//GEN-END:variables
 }
