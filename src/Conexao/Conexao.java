@@ -24,7 +24,7 @@ public class Conexao {
 
     private Socket socket;
 
-    private static String IP = "192.168.0.20";
+    private static String IP = "192.168.0.19";
 
     private InputStream inputStream;
     private OutputStream outputStream;

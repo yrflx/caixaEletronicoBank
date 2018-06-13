@@ -130,7 +130,7 @@ public class liberarAcesso extends javax.swing.JFrame {
             String result = "";
             result = conexao.recebeString();
             
-            if(!result.equals("true")){
+            if(result.equals("true")){
                 dispose();
                 CaixaEletronico cx = new CaixaEletronico(result, codigo);
                 cx.setVisible(true);

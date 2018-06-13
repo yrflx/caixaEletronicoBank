@@ -49,6 +49,9 @@ public class CaixaEletronico extends javax.swing.JFrame {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);
             }
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -184,6 +187,10 @@ public class CaixaEletronico extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_formWindowClosed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
