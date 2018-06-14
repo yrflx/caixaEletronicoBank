@@ -59,7 +59,7 @@ public class CaixaEletronico extends javax.swing.JFrame {
         jLabel1.setText("CAIXA ELETRONICO");
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Olá, [cliente]! Para começar, selecione uma das opções abaixo");
+        jLabel2.setText("Olá! Para começar, selecione uma das opções abaixo");
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("SALDO");
@@ -169,7 +169,18 @@ public class CaixaEletronico extends javax.swing.JFrame {
 
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
         
-    Conexao conexao = new Conexao(2525);
+ 
+        
+        
+        
+        
+    }//GEN-LAST:event_formWindowClosed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+         
+        System.out.println("FECHADNO");
+        
+        Conexao conexao = new Conexao(2525);
         try{
         
             conexao.conectaServidor();
@@ -182,14 +193,6 @@ public class CaixaEletronico extends javax.swing.JFrame {
         }finally{
             if(conexao.conectaServidor()) conexao.fechaConexao();
         }
-        
-        
-        
-        
-    }//GEN-LAST:event_formWindowClosed
-
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        // TODO add your handling code here:
     }//GEN-LAST:event_formWindowClosing
 
     /**

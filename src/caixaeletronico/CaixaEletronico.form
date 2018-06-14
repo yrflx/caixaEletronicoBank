@@ -80,7 +80,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Ol&#xe1;, [cliente]! Para come&#xe7;ar, selecione uma das op&#xe7;&#xf5;es abaixo"/>
+        <Property name="text" type="java.lang.String" value="Ol&#xe1;! Para come&#xe7;ar, selecione uma das op&#xe7;&#xf5;es abaixo"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
